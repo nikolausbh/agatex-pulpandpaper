@@ -21,4 +21,4 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://www.agatex-paper.com/sitemap.xml
+Sitemap: https://www.agatex-pulpandpaper.com/sitemap.xml
