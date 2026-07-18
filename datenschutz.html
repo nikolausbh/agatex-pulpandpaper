@@ -151,6 +151,7 @@
       .card-header { flex-wrap: wrap; }
     }
   </style>
+  <script defer src="analytics.js"></script>
 </head>
 <body>
 
@@ -174,7 +175,7 @@
     <div class="sec-label">Rechtliches</div>
     <h1 style="font-size: clamp(2rem,4vw,3rem); font-weight: 800; letter-spacing: -.03em; margin-bottom: 12px;">Datenschutzerklärung</h1>
     <p style="font-size: .9rem; color: var(--muted); line-height: 1.7;">
-      Informationen gemäß Art. 13 &amp; 14 DSGVO (Datenschutz-Grundverordnung). Stand: Juni 2026.
+      Informationen gemäß Art. 13 &amp; 14 DSGVO (Datenschutz-Grundverordnung). Stand: Juli 2026.
     </p>
   </div>
 </div>
@@ -234,13 +235,17 @@
       <div class="card">
         <div class="card-header">
           <div class="card-icon">🍪</div>
-          <div class="card-title">Cookies &amp; Tracking</div>
+          <div class="card-title">Cookies &amp; Reichweitenmessung</div>
         </div>
         <p style="font-size:.875rem; color:var(--muted); line-height:1.75;">
-          Diese Website verwendet <strong style="color:var(--blue);">keine Cookies</strong> und keine Web-Analyse-Tools (kein Google Analytics, kein Tracking). Es findet kein Profiling und keine Verhaltensanalyse statt. Lediglich Ihre Spracheinstellung wird technisch notwendig lokal in Ihrem Browser (localStorage) abgelegt.
+          Diese Website nutzt <strong style="color:var(--blue);">Google Analytics 4</strong> zur Analyse der Websitenutzung. Dabei werden Cookies gesetzt – jedoch <strong style="color:var(--blue);">erst, nachdem Sie im Cookie-Banner ausdrücklich zugestimmt haben</strong> (Opt-in). Ohne Ihre Einwilligung werden keine Analyse-Cookies gesetzt und keine Daten an Google übertragen.
         </p>
+        <div class="data-block" style="margin-top:14px;">
+          <p class="data-basis">Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO (Einwilligung) i. V. m. § 165 Abs. 3 TKG 2021</p>
+          <p class="data-duration">Ihre Einwilligung ist freiwillig und jederzeit mit Wirkung für die Zukunft widerrufbar: <a href="#" onclick="if(window.agatexOpenConsent)agatexOpenConsent();return false;" style="color:var(--green);font-weight:600;">Cookie-Einstellungen ändern</a></p>
+        </div>
         <div class="info-note">
-          Da ausschließlich technisch notwendige Funktionen genutzt werden, ist gemäß § 165 TKG 2021 kein Cookie-Banner erforderlich.
+          Zusätzlich messen wir die Reichweite anonym und <strong style="color:var(--blue);">cookielos</strong> mit <strong style="color:var(--blue);">Cloudflare Web Analytics</strong> – dabei werden keine Cookies gesetzt und keine personenbezogenen Profile gebildet. Ihre Spracheinstellung wird technisch notwendig lokal in Ihrem Browser gespeichert, nicht in einem Cookie.
         </div>
       </div>
 
@@ -250,6 +255,20 @@
           <div class="card-icon">🔗</div>
           <div class="card-title">Drittanbieter &amp; Datenübermittlung</div>
         </div>
+        <div class="data-block">
+          <div class="data-block-title">Google Analytics 4 (nur mit Einwilligung)</div>
+          <p>Anbieter: Google Ireland Ltd., Gordon House, Barrow Street, Dublin 4, Irland (Mutterg. Google LLC, USA). Nach Ihrer Einwilligung erfasst Google Analytics pseudonymisierte Nutzungsdaten (u. a. gekürzte IP-Adresse, Seitenaufrufe, ungefährer Standort, Gerät/Browser, Verweisquelle) zur Auswertung der Websitenutzung. Die IP-Anonymisierung ist aktiviert. Eine Übermittlung in die USA ist möglich; Google ist über den EU-US Data Privacy Framework zertifiziert.</p>
+          <p class="data-basis">Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO (Einwilligung)</p>
+          <p class="data-duration">Weitere Informationen: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" style="color:var(--green);">policies.google.com/privacy</a></p>
+        </div>
+
+        <div class="data-block">
+          <div class="data-block-title">Cloudflare Web Analytics (cookielos)</div>
+          <p>Anbieter: Cloudflare Inc., 101 Townsend St, San Francisco, CA 94107, USA. Erfasst anonyme, aggregierte Nutzungsstatistiken (Seitenaufrufe, Verweisquelle, Land, Gerätetyp) <strong style="color:var(--blue);">ohne Cookies</strong> und ohne Bildung personenbezogener Profile.</p>
+          <p class="data-basis">Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an anonymer Reichweitenmessung)</p>
+          <p class="data-duration">Weitere Informationen: <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener" style="color:var(--green);">cloudflare.com/privacypolicy</a></p>
+        </div>
+
 
         <div class="data-block">
           <div class="data-block-title">Web3Forms (Formularzustellung)</div>
